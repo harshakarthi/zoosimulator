@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ZooSimulatorAPI/ZooSimulatorAPI.csproj" Id="c0ec2131-aefc-4372-a729-c71626302a11" />
+  <Project Path="ZooSimulator.Core.csproj" />
+</Solution>
