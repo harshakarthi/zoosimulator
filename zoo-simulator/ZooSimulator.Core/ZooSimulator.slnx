@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ZooSimulator.API/ZooSimulator.API.csproj" />
+  <Project Path="ZooSimulator.Core.csproj" />
+</Solution>

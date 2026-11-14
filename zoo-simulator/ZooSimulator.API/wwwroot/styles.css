@@ -1,0 +1,223 @@
+/* Zoo Simulator styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f5;
+  color: #222;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.header {
+  background-color: #2e5e3e;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* Zoo time, next hour, alive count and feed button */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 140px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feed-button {
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.feed-button:hover:not(:disabled) {
+  background-color: #256528;
+}
+
+.feed-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.message {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  color: #256528;
+  background-color: #e8f5e9;
+  border-radius: 6px;
+}
+
+.error {
+  padding: 8px 12px;
+  color: #b71c1c;
+  background-color: #ffebee;
+  border-radius: 6px;
+}
+
+.hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* One section per species */
+.species {
+  margin-top: 24px;
+}
+
+.species h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.species small {
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+}
+
+.rule {
+  margin: 2px 0 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  table-layout: fixed; /* keeps the columns lined up across all three tables */
+}
+
+th:nth-child(1) {
+  width: 30%;
+}
+
+th:nth-child(2) {
+  width: 45%;
+}
+
+th:nth-child(3) {
+  width: 25%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-size: 13px;
+}
+
+.dead-row td {
+  color: #999;
+}
+
+/* Health bar */
+.health {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 140px;
+  height: 8px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+}
+
+.bar-fill.ok {
+  background-color: #43a047;
+}
+
+.bar-fill.low {
+  background-color: #f57c00;
+}
+
+.bar-fill.dead {
+  background-color: #bbb;
+}
+
+/* Status label */
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.status.ok {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+}
+
+.status.low {
+  color: #e65100;
+  background-color: #fff3e0;
+}
+
+.status.dead {
+  color: #777;
+  background-color: #eee;
+}
+
