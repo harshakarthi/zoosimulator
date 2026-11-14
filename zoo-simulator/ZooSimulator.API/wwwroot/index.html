@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Zoo Simulator</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Zoo Simulator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Zoo Simulator</h1>
-    <span id="hour-length"></span>
-  </header>
+    <header class="header">
+        <h1>Zoo Simulator</h1>
+    </header>
 
-  <main class="container">
-    <p id="error" class="error" hidden></p>
+    <main class="container">
+        <p id="error" class="error" hidden></p>
 
-    <!-- Zoo time, countdown, alive count and the Feed button -->
-    <div class="info-row">
-      <div class="info-box">
-        <span class="label">Zoo time</span>
-        <span id="zoo-time" class="value">-</span>
-      </div>
-      <div class="info-box">
-        <span class="label">Next hour in</span>
-        <span id="next-hour" class="value">-</span>
-      </div>
-      <div class="info-box">
-        <span class="label">Animals alive</span>
-        <span id="alive" class="value">-</span>
-      </div>
-      <button id="feed-button" class="feed-button" disabled>Feed animals</button>
-    </div>
 
-    <p id="hint" class="hint" hidden></p>
-    <p id="message" class="message" hidden></p>
+        <div class="info-row">
+            <div class="info-box">
+                <span class="label">Date</span>
+                <span id="zoo-date" class="value">-</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Time</span>
+                <span id="zoo-time" class="value">-</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Animals alive</span>
+                <span id="alive" class="value">-</span>
+            </div>
+            <button id="feed-button" class="feed-button" disabled>Feed animals</button>
+        </div>
 
-    <!-- One section per species is added here by app.js -->
-    <div id="species-sections"></div>
-  </main>
+        <p id="hint" class="hint" hidden></p>
+        <div id="species-sections"></div>
+    </main>
 
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

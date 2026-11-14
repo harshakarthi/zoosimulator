@@ -10,7 +10,7 @@ builder.Services.AddSingleton(config);
 
 builder.Services.AddSingleton<IRandomProvider, RandomProvider>();
 builder.Services.AddSingleton<IZooService, ZooService>();
-
+builder.Services.AddScoped<IZooApiService, ZooApiService>();
 builder.Services.AddSingleton<ZooSimulationService>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<ZooSimulationService>());
 
