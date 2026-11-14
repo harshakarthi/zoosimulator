@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="ZooSimulator.API/ZooSimulator.API.csproj" />
   <Project Path="ZooSimulator.Core/ZooSimulator.Core.csproj" />
+  <Project Path="ZooSimulator.Tests/ZooSimulator.Tests.csproj" Id="cbbdc055-9f4b-4670-b9e0-90277327c3ae" />
 </Solution>
